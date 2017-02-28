@@ -1,0 +1,27 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-deep_orange.min.css" />-->
+<link rel="stylesheet" href="css/main.css" />
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<body>
+    <!--For demo page-->
+    <unity-pages></unity-pages>
+
+    <unity-layout title="Unity Widget SDK">
+      <yield to = "unity-nav-items">
+        <a class="mdl-navigation__link" href="#/unity-like-button">Like Button</a>
+        <a class="mdl-navigation__link" href="#/unity-fountain">Fountain</a>
+        <a class="mdl-navigation__link" href="#/unity-balance">Balance</a>
+      </yield>
+    </unity-layout>
+    <script>
+        SystemJS.import("scripts/start");
+    </script>
+    <!-- <script src="dist/unity-sdk.js"></script> -->
+</body>
+
+</html>

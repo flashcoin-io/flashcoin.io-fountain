@@ -1,0 +1,95 @@
+.unity-balance {
+    position: fixed;
+    background-color: #256dc2;
+}
+
+.unity-balance:hover,
+.unity-balance:focus {
+    background-color: #367DD0;
+    box-shadow: 0px 1px 10px #1B3F8A;
+}
+
+unity-balance {
+    display: flex;
+    justify-content: center;
+}
+
+.unity-balance .loaded {
+    display: flex;
+}
+.unity-balance unity-logo{
+        height: 40px;
+    line-height: 40px;
+    margin-right: 6px;
+}
+.balanceE {
+    padding: 5px 0;
+}
+
+a#logout {
+    font-size: 12pt;
+    background: #FFFFFE;
+    padding: 3px;
+    border-radius: 2px;
+    float: right;
+    margin-left: 7px;
+    color: #3F51B5;
+    height: 17px;
+    margin-top: 18px;
+    margin-right: -2px;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    to {
+        background-color: #256dc2;
+    }
+}
+
+.unity-balance.update-balance-flash {
+    background-color: rgb(255, 238, 0);
+    animation: blink 1s steps(2, start) infinite;
+}
+
+.hideBalance {
+    display: block;
+    position: relative;
+    bottom: 0;
+    height: 24px;
+    left: 10px;
+    width: 76px;
+    background: #256DC2;
+    border: 1px solid rgba(189, 189, 189, 0.52);
+    border-radius: 2px;
+    padding-left: 4px;
+}
+.hideBalance .mini-handle {
+    display: flex;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+}
+.hideBalance unity-logo svg{
+        width: 50px;
+    height: 18px;
+}
+.hideBalance .mini-handle li {}
+
+.hideBalance .mini-handle li a {
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    line-height: 15px;
+    justify-content: center;
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+    border: 1px solid rgb(158, 158, 158);
+}
+
+.hideBalance .mini-handle li a .material-icons {
+    font-size: 13px;
+    margin-top: 1px;
+}

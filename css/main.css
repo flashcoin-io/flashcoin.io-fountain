@@ -1,0 +1,57 @@
+main {
+    display: block;
+}
+
+.mdl-components .mdl-components__pages {
+    display: inline-block;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-bottom: 120px;
+}
+
+.mdl-components .mdl-components__page {
+    display: none;
+    min-height: 1000px;
+}
+
+.mdl-components .mdl-components__page.is-active {
+    display: block;
+}
+
+.mdl-components .component-title {
+    margin-top: 30px;
+}
+
+.mdl-components .docs-toc, .mdl-components .component-title {
+    margin-bottom: 60px;
+    margin-left: 32px;
+}
+
+.snippet-group {
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-bottom: 84px;
+}
+
+.snippet-group .snippet-header {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.snippet-group .snippet-demos, .snippet-group .snippet-captions {
+    display: table-row;
+}
+
+.snippet-group .snippet-caption-padding {
+    text-align: center;
+    padding: 0;
+}
+
+.snippet-group .snippet-demo-padding, .snippet-group .snippet-caption, .snippet-group .snippet-caption-padding {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+}

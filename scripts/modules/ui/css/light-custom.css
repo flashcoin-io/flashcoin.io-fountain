@@ -1,0 +1,40 @@
+.unity-login-dialog  .mdl-card__actions{
+    text-align: right;
+}
+.unity-login-dialog .mdl-card__actions .btn-close.mdl-button--raised.mdl-button--colored{
+    background: #A5A5A5;
+}
+
+.unity-control-snackbar{
+    position: absolute !important;
+    bottom: inherit;
+    background-color: orangered !important;
+    color: white !important;
+    border: 2px solid black;
+}
+.unity-message-dialog{
+    padding: 0 15px;
+    top: 10%;    
+    position: fixed;
+    border-radius: 5px;    
+}
+.unity-message-dialog p{
+    margin: 10px 0;
+}
+.unity-message-dialog.unity-success-dialog{
+    color: rgb(0, 68, 3);
+   
+    background: rgb(124, 212, 127);
+    border: 1px solid rgb(76,175,80);
+    
+}
+.unity-message-dialog.unity-error-dialog{
+    background: #FFBABA;
+    border: 1px solid rgb(213,0,0);
+    color: rgb(169, 0, 0);
+}
+.unity-message-dialog.unity-alert-dialog{
+    color: rgb(0, 18, 115);
+    background: #BDE5F8;
+    border: 1px solid rgb(0, 29, 191);
+}

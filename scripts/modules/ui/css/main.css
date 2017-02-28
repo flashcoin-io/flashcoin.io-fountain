@@ -1,0 +1,83 @@
+unity-login dialog {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 0;
+  padding-bottom: 10px;
+}
+/*Popup login fountains*/
+.banner{
+        display: flex;
+    background: #256DC2;
+    color: #fff;
+       height: 50px;
+    line-height: 50px;
+}
+.banner unity-logo svg{
+    padding: 0 5px;
+    width: 145px;
+    height: 50px;
+}
+.unity-balance{
+    min-height: 40px;
+    line-height: 100%;
+    text-transform: inherit;
+    padding-left: 10px;
+    padding-right: 20px;
+    box-shadow: 0px 1px 10px #072D80;
+    border-radius: 4px;
+        position: relative;
+        color: #fff;
+}
+.unity-balance .no-load{
+       
+}
+.unity-balance p{
+       padding: 0px 0px;
+    margin: 0 0;
+    font-size: 11pt;
+    height: 18px;
+}
+.unity-balance unity-logo svg{  
+}
+.unity-balance unity-logo svg image{
+}
+.unity-login-dialog .mdl-checkbox__label,
+.unity-login-dialog .mdl-textfield__label,
+.unity-login-dialog .mdl-textfield__input,
+.unity-login-dialog p{
+    font-size: 15px;
+}
+.unity-balance .loginBtn{
+    cursor: pointer;
+}
+/*==========*/
+
+.mini-handle{
+        display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mini-handle li{
+    display: block;
+    margin: 2px;
+}
+.mini-handle li a{
+    width: 11px;
+    height: 11px;
+    background: #FFFFFF;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    line-height: 8px;
+    justify-content: center;
+    color: #444;
+    cursor: pointer;
+    font-size: 14pt;
+}
+ .mini-handle li a .material-icons{
+        font-size: 11px;
+}

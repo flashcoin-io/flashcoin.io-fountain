@@ -1,0 +1,69 @@
+<section id="cards-section" class="mdl-components__page mdl-grid is-active">
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+                <h3>Fountain</h3>
+                <p>
+                    A socially distributed digital token that rewards networking and social harmony..  It’s an open ended network can be used by consumers, bloggers and websites, social media users, content creators, network service providers and merchants.  Use it to thank someone, to pay a compliment, reward someone or just for fun; the use cases are limited only by your imagination.
+                </p>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <ul class="mdl-list">
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <h3 class="mdl-card__title-text">Step-by-Step</h3>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            1. Include the JavaScript SDK on your page once, ideally right after the opening body tag.
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i>https://qa.safe.cash/widgets/dist/unity-sdk.js</i>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            2. Place the code that is generated in below to position you want the widget to appear on your page.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <h3 class="mdl-card__title-text">Preview and Code generate</h3></div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <div fountain="17012a5878f87a4ad611b53e4d79acc7" title="FLASH Fountain" sub-title="" submit-button-label="" register-button-label="registerLabel" data-is="unity-fountain" riot-tag="unity-fountain"></div>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col" if="{codeGenerate1}"><b><i>Copy and Paste the code in below to position you want the widget to appear on your page.</i></b></div>
+            <div class="mdl-cell mdl-cell--12-col">For case your editor support custom tags:</div>
+            <div class="mdl-cell mdl-cell--8-col mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" readonly type="text" rows="{codeGenerate1? 10 : 1}" id="unity-like-code-generate-1" value="{codeGenerate1}"></textarea>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">For case your editor doesn't support custom tags:</div>
+            <div class="mdl-cell mdl-cell--8-col mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" readonly type="text" rows="{codeGenerate2? 10 : 1}" id="unity-like-code-generate-2" value="{codeGenerate2}"></textarea>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">&nbsp;</div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <h3 class="mdl-card__title-text">Settings</h3>
+                <p><i>Please change settings below then click Set button to see effect.</i></p>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="unity-fountain-fountainId" value="{data.fountain}">
+                    <label class="mdl-textfield__label" for="unity-fountain-fountainId">Fountain ID</label>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--8-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <textarea class="mdl-textfield__input" type="text" rows="3" id="unity-fountain-message" value="{data.message}"></textarea>
+                <label class="mdl-textfield__label" for="unity-fountain-message">Message</label>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--raised" onclick="{doSet}">
+                    Set
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

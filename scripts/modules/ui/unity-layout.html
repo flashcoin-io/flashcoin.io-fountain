@@ -1,0 +1,20 @@
+<!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <div class="mdl-layout-spacer"></div>
+            <!-- <unity-balance></unity-balance> -->
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">{opts.title}</span>
+        <nav class="mdl-navigation">
+          <yield from='unity-nav-items'/>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <!-- Your content goes here -->
+        <unity-page-content></unity-page-content>
+    </main>
+</div>

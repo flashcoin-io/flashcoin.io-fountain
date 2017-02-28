@@ -1,0 +1,34 @@
+<div class="btnLike">
+    <button id="{likeButtonId}" class="unity-like mdl-button mdl-js-button mdl-button--colored mdl-button--raised" style="height: {opts.height || 36}px; line-height: 100%;font-weight:bold;text-transform:uppercase;padding-left: {opts.paddingLeft || 10}px;padding-right: {opts.paddingRight || 10}px;" onclick="{doLike}" onmouseover="{onMouseover}" onmouseleave="{onMouseLeaveBtn}">
+        <unity-logo></unity-logo>
+        <label style="position: relative;top: 3px;font-size: 12pt;cursor: pointer;">{opts.caption || "LIKE"}</label>  
+    </button>
+    <div id="{menuBtnId}" class="menuBtn" onmouseover="{onMouseOverOpt}" onmouseleave="{onMouseLeaveOpt}">
+        <ul class="options">
+            <li class="mdl-list__item" onclick={like10}>
+                <div class="material-icons mdl-list__item-avatar"><a>x</a></div>
+                <div class="itemsLi"><a class= "items">Send <strong>10</strong> Flash</a></div>
+            </li>
+            <li class="mdl-list__item" onclick={like20}>
+                <div class="material-icons mdl-list__item-avatar"><a>x</a></div>
+                <div class="itemsLi"><a class= "items">Send <strong>20</strong> Flash</a></div>
+            </li>
+            <li class="mdl-list__item" onclick={like30}>
+                <div class="material-icons mdl-list__item-avatar"><a>x</a></div>
+                <div class="itemsLi"><a class= "items">Send <strong>30</strong> Flash</a></div>
+            </li>
+            <li class="mdl-list__item" onclick={like40}>
+                <div class="material-icons mdl-list__item-avatar"><a>x</a></div>
+                <div class="itemsLi"><a class= "items">Send <strong>40</strong> Flash</a></div>
+            </li>
+        </ul>
+        <div class="inputEnter">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="custom-amount-id" onkeypress={filterNumberEdit} on-blur={amountBlur} onkeyup={editSendAmount}>
+                <label class="mdl-textfield__label" for="sample3">Enter amount...</label>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick={likeCustom}>LIKE</button>
+        </div>
+    </div>
+    <unity-login for="{likeButtonId}" if="{!isLoggedIn}"></unity-login>
+</div>

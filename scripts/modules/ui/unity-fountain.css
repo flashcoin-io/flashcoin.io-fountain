@@ -1,0 +1,79 @@
+.fountains{
+    width: 280px !important;
+    border: 1px solid #cedce2;
+    box-shadow: 1px 1px 14px 0 #333333, 4px 3px 6px -4px #111111, 5px 7px 10px 1px rgba(0,0,0, 0.54);
+}
+.fountains .header-top{
+    background-color: #256dc2;
+    position: relative;
+}
+.fountains .header-top label{
+    color: #fff;
+    position: absolute;
+    top: 16px;
+    left: 111px;
+    font-weight: 600;
+    font-size: 15pt;
+}
+.fountains .header-top img{
+    width: 90px;
+    padding: 10px 0 5px 15px;
+}
+.fountains unity-logo svg{
+    padding: 4px 10px 0;
+   width: 100px;
+    height: 36px;
+}
+.fountains .header-top h3{
+    font-size: 11pt !important;
+    line-height: 30px;
+    margin: 0;
+    color: #fff !important;
+}
+.fountains .header-top h2{
+    font-size: 23pt !important;
+    color: #fff !important;
+    margin: 0;
+    line-height: 29px;
+    padding-bottom: 10px;
+}
+.fountains .content{
+    padding: 5px 15px;
+    text-align: center;
+}
+.fountains .mdl-textfield__input{
+    font-size: 11pt;
+}
+.fountains .content .mdl-textfield__label{  font-size: 11pt;}
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label,
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
+.mdl-textfield--floating-label.has-placeholder .mdl-textfield__label{font-size: 11pt !important;}
+.fountains .content h2.links-active{
+    font-size: 12pt !important ;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+}
+.fountains .content button{
+    background: #fe8400;
+    color: #fff !important;
+}
+.fountains .content button:hover{
+    background: #fe6f06;
+}
+.fountains p.line{
+    width: 65px;
+    margin: 0 auto;
+    text-indent: -10000px;
+    border-bottom: 1px solid #ccc;
+    line-height: 12px;
+}
+.fountains .content a{
+    color: #256dc2 !important;
+    text-decoration: none;
+}
+.text-center{text-align: center}
+
+.color-white {
+    color: white;
+}

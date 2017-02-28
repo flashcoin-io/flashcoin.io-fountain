@@ -1,0 +1,10 @@
+.text-center{
+	text-align: center !important;
+	margin-top: 16px;
+}
+
+.unity-login-dialog .mdl-card .text-center .alink{
+    color: #256dc2 !important;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,98 @@
+<section id="cards-section" class="mdl-components__page mdl-grid is-active">
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+                <h3>Like Button</h3>
+                <p>
+                    A single click on the Like button will 'like' pieces of content on the web.
+                </p>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <ul class="mdl-list">
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <h3 class="mdl-card__title-text">Step-by-Step</h3>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            1. Include the JavaScript SDK on your page once, ideally right after the opening <body> tag.
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <i>https://qa.safe.cash/widgets/dist/unity-sdk.js</i>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            2. Place the code that is generated in below to position you want the widget to appear on your page.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <h3 class="mdl-card__title-text">Preview and Code generate</h3></div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <unity-like public-address="{data.publicAddress}" amount="{data.amount}" message="{data.message}"></unity-like>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col" if="{codeGenerate1}"><b><i>Copy and Paste the code in below to position you want the widget to appear on your page.</i></b></div>
+            <div class="mdl-cell mdl-cell--12-col">For case your editor support custom tags:</div>
+            <div class="mdl-cell mdl-cell--8-col mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" readonly type="text" rows="{codeGenerate1? 10 : 1}" id="unity-like-code-generate-1" value="{codeGenerate1}"></textarea>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">For case your editor doesn't support custom tags:</div>
+            <div class="mdl-cell mdl-cell--8-col mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" readonly type="text" rows="{codeGenerate2? 10 : 1}" id="unity-like-code-generate-2" value="{codeGenerate2}"></textarea>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">&nbsp;</div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <h3 class="mdl-card__title-text">Settings</h3>
+                <p><i>Please change settings below then click Set button to see effect.</i></p>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="unity-like-address" value="{data.publicAddress}">
+                    <label class="mdl-textfield__label" for="unity-like-address">Public address</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="unity-like-amount" value="{data.amount}">
+                    <label class="mdl-textfield__label" for="unity-like-height">Amount</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="unity-like-caption" value="{data.caption}">
+                    <label class="mdl-textfield__label" for="unity-like-caption">Caption</label>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--8-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <textarea class="mdl-textfield__input" type="text" rows="3" id="unity-like-message" value="{data.message}"></textarea>
+                <label class="mdl-textfield__label" for="unity-like-message">Message</label>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="unity-like-height" value="{data.height}">
+                    <label class="mdl-textfield__label" for="unity-like-height">Height</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="unity-like-padding-left" value="{data.paddingLeft}">
+                    <label class="mdl-textfield__label" for="unity-like-padding-left">Padding Left</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="unity-like-padding-right" value="{data.paddingRight}">
+                    <label class="mdl-textfield__label" for="unity-like-padding-right">Padding Right</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--raised" onclick="{doSet}">
+                    Set
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

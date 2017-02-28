@@ -1,0 +1,30 @@
+{
+  "name": "like-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "dialog-polyfill": "npm:dialog-polyfill@^0.4.3",
+      "image": "github:systemjs/plugin-image@^0.1.0",
+      "material-design-lite": "github:google/material-design-lite@^1.1.2",
+      "odometer": "npm:odometer@^0.4.7",
+      "riot": "npm:riot@^2.3.16",
+      "superagent": "npm:superagent@^1.8.1",
+      "tag": "npm:systemjs-riot@^0.9.0",
+      "text": "github:systemjs/plugin-text@^0.0.7"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "clean-css": "npm:clean-css@^3.4.10",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

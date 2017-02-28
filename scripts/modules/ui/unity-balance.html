@@ -1,0 +1,40 @@
+<div if="{!isHidden}">
+    <div id="{balanceButtonId}" class="unity-balance" style="" onclick="{onClick}">
+        <virtual if="{isLoggedIn}">
+            <div class="loaded" show="{loadBalanceDone}" style="height:45px;padding: 0px;">
+                <unity-logo></unity-logo>
+                <div class="balanceE">
+                    <p>
+                <span style="vertical-align: super;">My balance: </span>
+                <span style="vertical-align: super;" class="odometer" show="{loadBalanceDone}"></span>
+                </p>
+                <p style="vertical-align: super;"><span>{email}</span></p>
+                </div>
+                <a class= "" id="logout" onclick="{logoutClick}">Logout</a>
+            </div>
+            <div class="no-load" show="{!loadBalanceDone}">
+                <unity-logo></unity-logo>
+                <span style="line-height: 35px;">
+                My balance: loading...
+            </span>
+            </div>
+        </virtual>
+        <virtual if="{!isLoggedIn}">
+            <div class="loginBtn">
+            <unity-logo></unity-logo>
+            <span style="line-height: 38px;">Click to login and see your balance</span>
+            </div>
+        </virtual>
+        <div class="mini-handle" onclick="{onMinClick}">
+            <li class="mini hide"><a>-</a></li>
+        </div>
+    </div>
+    <unity-login if="{!isLoggedIn}" menu-align="{opts.menuAlign}"></unity-login>
+</div>
+
+<div id="balanceMinButton" if="{isHidden}" class="hideBalance" onclick="{onMaxClick}">
+    <unity-logo></unity-logo>
+    <div class="mini-handle">
+        <li class="mini show"><a>+</a></li>
+    </div>
+</div>

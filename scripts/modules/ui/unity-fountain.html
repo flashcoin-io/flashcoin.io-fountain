@@ -1,0 +1,29 @@
+<div class="fountains">
+    <div class="header-top">
+         <unity-logo></unity-logo>
+         <label>FOUNTAIN</label>
+         <!--<div class="mini-handle">
+             <li class="mini hide"><a><i class="material-icons">remove</i></a></li>
+             <li class="mini show"><a><i class="material-icons">crop_square</i></a></li>
+         </div>-->
+
+        <h3 class="text-center" if={amount}>Today's Reward</h3>
+        <h2 class="text-center" if={amount}>{amount} Flash</h2>
+        <p class="text-center color-white" if={!amount}><i>This fountain has been turned off.<br>Please check again later</i></p>
+    </div>
+    <div class="content">
+        <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="{emailId}">
+                <label class="mdl-textfield__label" for="{emailId}">Enter your Safe.Cash account (email)</label>
+            </div>
+        </form>
+        <button class="mdl-button mdl-js-button mdl-button--raised" onclick="{doGetUNTs}">
+            Get Reward
+        </button>
+        <p class="line">x</p>
+        <h2 class="links-active">
+            <span>Need a Wallet? </span><a href="https://safe.cash" target='_blank'>Get it HERE</a>
+        </h2>
+    </div>
+</div>
